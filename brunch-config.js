@@ -3,6 +3,16 @@ exports.config = {
   files: {
     javascripts: {
       joinTo: {
+        'js/admin_vending.js': [
+          "web/static/vendor/themes/admin_vending/bootstrap/js/bootstrap.min.js",
+          "web/static/vendor/themes/admin_vending/plugins/daterangepicker/daterangepicker.js",
+          "web/static/vendor/themes/admin_vending/plugins/datepicker/bootstrap-datepicker.js",
+          "web/static/vendor/themes/admin_vending/plugins/slimScroll/jquery.slimscroll.min.js",
+          "web/static/vendor/themes/admin_vending/plugins/fastclick/fastclick.min.js",
+          "web/static/vendor/themes/admin_vending/js/ex_admin.js",
+          "web/static/vendor/themes/admin_vending/js/moment.js",
+          "web/static/vendor/themes/admin_vending/dist/js/app.js",
+        ],
         'js/admin_lte2.js': [
           "web/static/vendor/themes/admin_lte2/bootstrap/js/bootstrap.min.js",
           "web/static/vendor/themes/admin_lte2/plugins/daterangepicker/daterangepicker.js",
@@ -47,17 +57,29 @@ exports.config = {
     //   // }
     // },
     stylesheets: {
-      joinTo: { "css/admin_lte2.css": [
-        "web/static/vendor/themes/admin_lte2/css/ex_admin.css",
-        "web/static/vendor/themes/admin_lte2/bootstrap/css/bootstrap.min.css",
-        "web/static/vendor/themes/admin_lte2/dist/css/AdminLTE.min.css",
-        "web/static/vendor/themes/admin_lte2/dist/css/skins/all-skins.min.css",
-        "web/static/vendor/themes/admin_lte2/css/font-awesome.min.css",
-        "web/static/vendor/themes/admin_lte2/css/ionicons.min.css",
-        "web/static/vendor/themes/admin_lte2/plugins/datepicker/datepicker3.css",
-        "web/static/vendor/themes/admin_lte2/plugins/daterangepicker/daterangepicker-bs3.css",
-        "web/static/vendor/themes/admin_lte2/plugins/select2/select2.css",
+      joinTo: {
+      "css/admin_vending.css": [
+        "web/static/vendor/themes/admin_vending/css/ex_admin.css",
+        "web/static/vendor/themes/admin_vending/bootstrap/css/bootstrap.min.css",
+        "web/static/vendor/themes/admin_vending/dist/css/AdminLTE.min.css",
+        "web/static/vendor/themes/admin_vending/dist/css/skins/all-skins.min.css",
+        "web/static/vendor/themes/admin_vending/css/font-awesome.min.css",
+        "web/static/vendor/themes/admin_vending/css/ionicons.min.css",
+        "web/static/vendor/themes/admin_vending/plugins/datepicker/datepicker3.css",
+        "web/static/vendor/themes/admin_vending/plugins/daterangepicker/daterangepicker-bs3.css",
+        "web/static/vendor/themes/admin_vending/plugins/select2/select2.css",
       ],
+        "css/admin_lte2.css": [
+          "web/static/vendor/themes/admin_lte2/css/ex_admin.css",
+          "web/static/vendor/themes/admin_lte2/bootstrap/css/bootstrap.min.css",
+          "web/static/vendor/themes/admin_lte2/dist/css/AdminLTE.min.css",
+          "web/static/vendor/themes/admin_lte2/dist/css/skins/all-skins.min.css",
+          "web/static/vendor/themes/admin_lte2/css/font-awesome.min.css",
+          "web/static/vendor/themes/admin_lte2/css/ionicons.min.css",
+          "web/static/vendor/themes/admin_lte2/plugins/datepicker/datepicker3.css",
+          "web/static/vendor/themes/admin_lte2/plugins/daterangepicker/daterangepicker-bs3.css",
+          "web/static/vendor/themes/admin_lte2/plugins/select2/select2.css",
+        ],
       "css/active_admin.css.css": [
         "web/static/vendor/themes/active_admin/css/active_admin.css.css",
         "web/static/vendor/themes/admin_lte2/plugins/select2/select2.css",

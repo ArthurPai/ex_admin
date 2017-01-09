@@ -100,11 +100,11 @@ defmodule Mix.Tasks.Admin.Install do
     File.mkdir_p Path.join ~w{web static assets images ex_admin datepicker}
 
     status_msg("creating", "css files")
-    ~w(admin_lte2.css admin_lte2.css.map active_admin.css.css active_admin.css.css.map)
+    ~w(admin_vending.css admin_vending.css.map admin_lte2.css admin_lte2.css.map active_admin.css.css active_admin.css.css.map)
     |> Enum.each(&(copy_vendor base_path, "css", &1))
 
     status_msg("creating", "js files")
-    ~w(jquery.min.js admin_lte2.js jquery.min.js.map admin_lte2.js.map)
+    ~w(jquery.min.js admin_vending.js admin_lte2.js jquery.min.js.map admin_vending.js.map admin_lte2.js.map)
     ++ ~w(ex_admin_common.js ex_admin_common.js.map)
     |> Enum.each(&(copy_vendor base_path, "js", &1))
 
@@ -130,11 +130,11 @@ defmodule Mix.Tasks.Admin.Install do
     File.mkdir_p Path.join(~w(web admin))
 
     status_msg("creating", "css files")
-    ~w(admin_lte2.css admin_lte2.css.map active_admin.css.css active_admin.css.css.map)
+    ~w(admin_vending.css admin_vending.css.map admin_lte2.css admin_lte2.css.map active_admin.css.css active_admin.css.css.map)
     |> Enum.each(&(copy_file base_path, "css", &1))
 
     status_msg("creating", "js files")
-    ~w(jquery.min.js admin_lte2.js jquery.min.js.map admin_lte2.js.map)
+    ~w(jquery.min.js admin_vending.js admin_lte2.js jquery.min.js.map admin_vending.js.map admin_lte2.js.map)
     ++ ~w(ex_admin_common.js ex_admin_common.js.map)
     |> Enum.each(&(copy_file base_path, "js", &1))
 
