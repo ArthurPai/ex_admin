@@ -143,8 +143,8 @@ defmodule ExAdmin.Table do
   def build_th({field_name, opts}, table_opts) do
     build_th(to_string(field_name), opts, table_opts)
   end
-  def build_th(field_name, _),
-    do: th(".th-#{parameterize field_name} #{humanize field_name}")
+  def build_th(field_name, opts),
+    do: th(".th-#{parameterize field_name} #{humanize Map.get(opts, :label, to_string(field_name))}")
   def build_th(field_name, opts, %{fields: fields} = table_opts) do
     if String.to_atom(field_name) in fields and opts in [%{}, %{link: true}] do
       _build_th(field_name, opts, table_opts)
@@ -152,7 +152,7 @@ defmodule ExAdmin.Table do
       th(".th-#{parameterize field_name} #{humanize Map.get(opts, :label, to_string(field_name))}")
     end
   end
-  def build_th(field_name, _, _), do: build_th(field_name, nil)
+  def build_th(field_name, opts, _), do: build_th(field_name, opts)
 
   def _build_th(field_name, _opts, %{path_prefix: path_prefix, order: {name, sort},
       fields: _fields} = table_opts) when field_name == name do
