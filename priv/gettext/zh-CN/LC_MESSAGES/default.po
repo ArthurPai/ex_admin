@@ -112,7 +112,7 @@ msgstr "确定删除？"
 #: lib/ex_admin/themes/active_admin/form.ex:110
 #: lib/ex_admin/themes/admin_lte2/form.ex:102
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: lib/ex_admin/themes/active_admin/form.ex:103
 #: lib/ex_admin/themes/admin_lte2/form.ex:99
