@@ -332,7 +332,13 @@ defmodule ExAdmin.Utils do
 
   @doc false
   def displayable_name_plural(conn) do
-    ExAdmin.Utils.get_resource_label(conn) |> Inflex.pluralize
+    label = ExAdmin.Utils.get_resource_label(conn)
+    case label do
+      << _head::utf8, _tail::binary >> ->
+        label
+      _ ->
+        label |> Inflex.pluralize
+    end
   end
   def displayable_name_singular(conn) do
     ExAdmin.Utils.get_resource_label(conn) |> Inflex.singularize
