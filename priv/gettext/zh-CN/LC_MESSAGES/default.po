@@ -67,7 +67,7 @@ msgstr "更新成功"
 #: lib/ex_admin/themes/active_admin/index.ex:131
 #: lib/ex_admin/themes/admin_lte2/index.ex:125
 msgid "Are you sure you want to delete these %{name}? You wont be able to undo this."
-msgstr "确定删除 %{name}？此动作无法还原！"
+msgstr "确定删除？ 此动作无法还原！"
 
 #: lib/ex_admin/themes/admin_lte2/filter.ex:27
 msgid "Clear Filters"
@@ -99,11 +99,11 @@ msgstr "删除选择的项目"
 
 #: web/controllers/admin_resource_controller.ex:90
 msgid "%{model_name} was successfully created."
-msgstr "%{model_name} 新增成功"
+msgstr "新增成功"
 
 #: web/controllers/admin_association_controller.ex:57
 msgid "%{through_assoc} was successfully added."
-msgstr "%{through_assoc} 新增成功"
+msgstr "新增成功"
 
 #: lib/ex_admin/utils.ex:279
 msgid "Are you sure you want to delete this?"
