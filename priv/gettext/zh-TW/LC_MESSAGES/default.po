@@ -153,7 +153,7 @@ msgstr "%{resource_model} 詳細資訊"
 
 #: lib/mix/tasks/admin.install.ex:200
 msgid "Dashboard"
-msgstr "儀表板"
+msgstr "數據總覽"
 
 #: lib/ex_admin/paginate.ex:38
 msgid "Displaying"
