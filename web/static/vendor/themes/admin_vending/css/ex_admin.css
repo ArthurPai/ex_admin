@@ -282,3 +282,53 @@ table.sortable .handle {
 select.association_filler, select.select2 {
   width: 80%;
 }
+
+table thead {
+  color: white;
+  background-color: #E1B1B3;
+}
+
+table.index_table th {
+  color: white;
+}
+
+.resource-icon {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-repeat:no-repeat;
+  background-size:cover;
+  vertical-align: text-bottom;
+}
+
+.dashboard-icon {
+  background-image: url("/images/ex_admin/dashboard.png");
+}
+
+.active .dashboard-icon {
+  background-image: url("/images/ex_admin/dashboard_active.png");
+}
+
+.machines-icon {
+  background-image: url("/images/ex_admin/machines.png");
+}
+
+.active .machines-icon {
+  background-image: url("/images/ex_admin/machines_active.png");
+}
+
+.users-icon {
+  background-image: url("/images/ex_admin/users.png");
+}
+
+.active .users-icon {
+  background-image: url("/images/ex_admin/users_active.png");
+}
+
+.roles-icon {
+  background-image: url("/images/ex_admin/roles.png");
+}
+
+.active .roles-icon {
+  background-image: url("/images/ex_admin/roles_active.png");
+}

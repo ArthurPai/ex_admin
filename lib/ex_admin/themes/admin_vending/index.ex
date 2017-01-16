@@ -105,16 +105,22 @@ defmodule ExAdmin.Theme.AdminVending.Index do
       link = case item do
         :show ->
           link_text = label || gettext("View")
-          a(link_text, href: admin_resource_path(resource, :show), class: base_class <> " view_link", title: link_text)
+          a "", href: admin_resource_path(resource, :show), class: base_class <> " view_link", title: link_text do
+            img src: "/images/ex_admin/view-icon.png"
+          end
         :edit ->
           link_text = label || gettext("Edit")
-          a(link_text, href: admin_resource_path(resource, :edit), class: base_class <> " edit_link", title: link_text)
+          a "", href: admin_resource_path(resource, :edit), class: base_class <> " edit_link", title: link_text do
+            img src: "/images/ex_admin/edit-icon.png"
+          end
         :delete ->
           link_text = label || gettext("Delete")
-          a(link_text, href: admin_resource_path(resource, :destroy),
+          a "", href: admin_resource_path(resource, :destroy),
               class: base_class <> " delete_link", "data-confirm": confirm_message(),
               "data-remote": true,
-              "data-method": :delete, rel: :nofollow, title: link_text)
+              "data-method": :delete, rel: :nofollow, title: link_text do
+            img src: "/images/ex_admin/delete-icon.png"
+          end
       end
       [link | acc]
     end)
@@ -151,12 +157,12 @@ defmodule ExAdmin.Theme.AdminVending.Index do
             end
           end
         end
-        div ".box-body" do
+        div ".box-body.no-padding" do
           fun.()
         end
       end
     else
-      div ".box-body" do
+      div ".box-body.no-padding" do
         fun.()
       end
     end

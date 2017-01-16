@@ -62,7 +62,7 @@ exports.config = {
         "web/static/vendor/themes/admin_vending/css/ex_admin.css",
         "web/static/vendor/themes/admin_vending/bootstrap/css/bootstrap.min.css",
         "web/static/vendor/themes/admin_vending/dist/css/AdminLTE.min.css",
-        "web/static/vendor/themes/admin_vending/dist/css/skins/all-skins.min.css",
+        "web/static/vendor/themes/admin_vending/dist/css/skins/skin-vending.css",
         "web/static/vendor/themes/admin_vending/css/font-awesome.min.css",
         "web/static/vendor/themes/admin_vending/css/ionicons.min.css",
         "web/static/vendor/themes/admin_vending/plugins/datepicker/datepicker3.css",

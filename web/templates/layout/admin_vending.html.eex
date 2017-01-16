@@ -61,7 +61,7 @@
           </div>
         </section>
       </div>
-      <footer id="footer" class="main-footer" style="font-size: 90%">
+      <footer id="footer" class="main-footer">
         Pizza Hut© 2017
       </footer>
     </div>
