@@ -12,6 +12,12 @@ body.skin-vending {
 .skin-vending .h4, .skin-vending .h5, .skin-vending .h6 {
   color: #8F1D17;
 }
+.skin-vending a.disabled {
+  pointer-events: none;
+  cursor: default;
+  box-shadow: none;
+  opacity: .45;
+}
 .skin-vending .main-header {
   background-image: url('/images/ex_admin/top-bar-bg.jpg');
 }
