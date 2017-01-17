@@ -332,3 +332,11 @@ table.index_table th {
 .active .roles-icon {
   background-image: url("/images/ex_admin/roles_active.png");
 }
+
+.templatepage-icon {
+  background-image: url("/images/ex_admin/templatepage.png");
+}
+
+.active .templatepage-icon {
+  background-image: url("/images/ex_admin/templatepage_active.png");
+}

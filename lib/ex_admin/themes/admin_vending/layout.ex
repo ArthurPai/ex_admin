@@ -9,11 +9,15 @@ defmodule ExAdmin.Theme.AdminVending.Layout do
     wrapper = Keyword.get(opts, :wrapper, :li)
     active_class = Keyword.get(opts, :active_class, "active")
     active_class = if link_active?(conn, path), do: active_class, else: ""
-    icon = if path == ExAdmin.Utils.admin_path(:page, [:dashboard]) do
-      content_tag :div, "", class: "resource-icon dashboard-icon"
-    else
-      content_tag :div, "", class: "resource-icon #{id}-icon"
-    end
+    icon =
+      cond do
+        path == ExAdmin.Utils.admin_path(:page, [:dashboard]) ->
+          content_tag :div, "", class: "resource-icon dashboard-icon"
+        path == ExAdmin.Utils.admin_path(:page, [:templatepage]) ->
+          content_tag :div, "", class: "resource-icon templatepage-icon"
+        true ->
+          content_tag :div, "", class: "resource-icon #{id}-icon"
+      end
     name_span = content_tag :span, name
     a_tag = content_tag :a, [icon, name_span], href: path
     if wrapper == :none do

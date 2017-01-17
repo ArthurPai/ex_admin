@@ -3,7 +3,14 @@
  * ---------
  */
 body.skin-vending {
+  color: #8F1D17;
   background-color: #F6E8E7;
+}
+.skin-vending h1, .skin-vending h2, .skin-vending h3,
+.skin-vending h4, .skin-vending h5, .skin-vending h6,
+.skin-vending .h1, .skin-vending .h2, .skin-vending .h3,
+.skin-vending .h4, .skin-vending .h5, .skin-vending .h6 {
+  color: #8F1D17;
 }
 .skin-vending .main-header {
   background-image: url('/images/ex_admin/top-bar-bg.jpg');
@@ -41,6 +48,7 @@ body.skin-vending {
   background-color: #E1B1B3;
 }
 .skin-vending .main-header .navbar .dropdown-menu li a {
+  color: #8F1D17;
   background-color: #E1B1B3;
 }
 .skin-vending .main-header .navbar .dropdown-menu li a:hover {
@@ -98,11 +106,11 @@ body.skin-vending {
   transition: border-left-color 0.3s ease;
 }
 .skin-vending .sidebar-menu > li.header {
-  color: #848484;
+  color: #8F1D17;
   background: #f9fafc;
 }
 .skin-vending .sidebar-menu > li > a {
-  color: #000000;
+  color: #8F1D17;
   padding: 12px 5px 12px 10px;
   border-left: 3px solid transparent;
   font-size: 18px;
@@ -112,6 +120,7 @@ body.skin-vending {
   border-left-color: #dd4b39;
 }
 .skin-vending .sidebar-menu > li.active > a {
+  color: white;
   background: #E1B1B3;
   border-left: 3px solid #8F1D17;
   font-weight: 600;
@@ -133,7 +142,7 @@ body.skin-vending {
 }
 .skin-vending .treeview-menu > li.active > a,
 .skin-vending .treeview-menu > li > a:hover {
-  color: #000000;
+  color: #8F1D17;
 }
 .skin-vending .treeview-menu > li.active > a {
   font-weight: 600;
@@ -186,6 +195,7 @@ body.skin-vending {
 .skin-vending .table>tfoot>tr>th,
 .skin-vending .table>thead>tr>td,
 .skin-vending .table>thead>tr>th {
+  color: #8F1D17;
   font-size: 20px;
 }
 .skin-vending .view_link img {
