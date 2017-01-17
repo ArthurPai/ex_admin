@@ -276,7 +276,8 @@ defmodule ExAdmin do
     case Utils.action_name(conn) do
       :show ->
         id = Map.get(params, "id")
-        Enum.reduce([:edit, :new, :delete], [], fn(action, acc) ->
+#        Enum.reduce([:edit, :new, :delete], [], fn(action, acc) ->
+        Enum.reduce([:edit, :new], [], fn(action, acc) ->
           if Utils.authorized_action?(conn, action, resource_model) do
             [{action, action_button(conn, defn, singular, :show, action, actions, id)}|acc]
           else
