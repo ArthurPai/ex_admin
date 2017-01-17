@@ -218,9 +218,20 @@ body.skin-vending {
   box-shadow: none;
 }
 .skin-vending .btn-primary {
-   background-color: #b8251d;
-   border-color: #f0a2b2;
+  background-color: #b8251d;
+  border-color: #f0a2b2;
 }
-.btn-primary:hover, .btn-primary:active, .btn-primary.hover {
+.skin-vending .btn-primary:hover, .skin-vending .btn-primary:active, .skin-vending .btn-primary.hover {
+  background-color: #9a1f18;
+}
+.skin-vending .btn-primary.disabled, .skin-vending .btn-primary.disabled.active,
+.skin-vending .btn-primary.disabled.focus, .skin-vending .btn-primary.disabled:active,
+.skin-vending .btn-primary.disabled:focus, .skin-vending .btn-primary.disabled:hover,
+.skin-vending .btn-primary[disabled], .skin-vending .btn-primary[disabled].active,
+.skin-vending .btn-primary[disabled].focus, .skin-vending .btn-primary[disabled]:active,
+.skin-vending .btn-primary[disabled]:focus, .skin-vending .btn-primary[disabled]:hover,
+fieldset[disabled] .skin-vending .btn-primary, fieldset[disabled] .skin-vending .btn-primary.active,
+fieldset[disabled] .skin-vending .btn-primary.focus, fieldset[disabled] .skin-vending .btn-primary:active,
+fieldset[disabled] .skin-vending .btn-primary:focus, fieldset[disabled] .skin-vending .btn-primary:hover {
   background-color: #9a1f18;
 }
