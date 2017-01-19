@@ -120,7 +120,7 @@ defmodule ExAdmin.Theme.AdminVending.Form do
     div(".form-group") do
       label ".col-sm-2.control-label", for: "#{model_name}_#{name_ids}" do
         text humanize(name)
-        required_abbr required
+#        required_abbr required
       end
       div ".col-sm-10" do
         fun.()
@@ -211,7 +211,7 @@ defmodule ExAdmin.Theme.AdminVending.Form do
               div ".form-group", [id: "#{ext_name}_label_input"] do
                 label ".col-sm-2.control-label", for: "#{ext_name}_#{f_name}" do
                   text humanize(f_name)
-                  required_abbr required
+#                  required_abbr required
                 end
                 div ".col-sm-10" do
                   select "##{ext_name}_#{f_name}#{error}.form-control", [name: name ] do
@@ -230,7 +230,7 @@ defmodule ExAdmin.Theme.AdminVending.Form do
               div ".form-group", id: "#{ext_name}_#{f_name}_input"  do
                 label ".col-sm-2.control-label", for: "#{ext_name}_#{f_name}" do
                   text humanize(f_name)
-                  required_abbr required
+#                  required_abbr required
                 end
                 div ".col-sm-10#{error}" do
                   val = if res, do: [value: Map.get(res, f_name, "") |> escape_value], else: []

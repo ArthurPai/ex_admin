@@ -37,7 +37,7 @@ defmodule ExAdmin.Theme.AdminVending do
     markup do
       label(".col-sm-2.control-label", for: ext_name) do
         text humanize(label)
-        required_abbr required
+#        required_abbr required
       end
       div ".col-sm-10#{error}" do
         contents.(ext_name)
