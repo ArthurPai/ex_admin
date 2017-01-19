@@ -19,21 +19,26 @@ msgstr[1] ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:145
 #: lib/ex_admin/themes/admin_lte2/index.ex:139
+#: lib/ex_admin/themes/admin_vending/index.ex:145
 msgid "Batch Actions"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:33
 #: lib/ex_admin/themes/admin_lte2/index.ex:32
+#: lib/ex_admin/themes/admin_vending/index.ex:32
 msgid "Create one"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:116
-#: lib/ex_admin/themes/admin_lte2/index.ex:110 lib/ex_admin/view_helpers.ex:63
+#: lib/ex_admin/themes/admin_lte2/index.ex:110
+#: lib/ex_admin/themes/admin_vending/index.ex:112
+#: lib/ex_admin/view_helpers.ex:63
 msgid "Edit"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/filter.ex:14
 #: lib/ex_admin/themes/admin_lte2/filter.ex:15
+#: lib/ex_admin/themes/admin_vending/filter.ex:15
 msgid "Filters"
 msgstr ""
 
@@ -67,10 +72,12 @@ msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:131
 #: lib/ex_admin/themes/admin_lte2/index.ex:125
+#: lib/ex_admin/themes/admin_vending/index.ex:131
 msgid "Are you sure you want to delete these %{name}? You wont be able to undo this."
 msgstr ""
 
 #: lib/ex_admin/themes/admin_lte2/filter.ex:27
+#: lib/ex_admin/themes/admin_vending/filter.ex:27
 msgid "Clear Filters"
 msgstr ""
 
@@ -80,21 +87,27 @@ msgstr ""
 #: lib/ex_admin/themes/admin_lte2/form.ex:246
 #: lib/ex_admin/themes/admin_lte2/form.ex:297
 #: lib/ex_admin/themes/admin_lte2/index.ex:113
+#: lib/ex_admin/themes/admin_vending/form.ex:249
+#: lib/ex_admin/themes/admin_vending/form.ex:300
+#: lib/ex_admin/themes/admin_vending/index.ex:117
 msgid "Delete"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/filter.ex:23
 #: lib/ex_admin/themes/admin_lte2/filter.ex:26
+#: lib/ex_admin/themes/admin_vending/filter.ex:26
 msgid "Filter"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:113
 #: lib/ex_admin/themes/admin_lte2/index.ex:107
+#: lib/ex_admin/themes/admin_vending/index.ex:107
 msgid "View"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:152
 #: lib/ex_admin/themes/admin_lte2/index.ex:146
+#: lib/ex_admin/themes/admin_vending/index.ex:152
 msgid "Delete Selected"
 msgstr ""
 
@@ -112,11 +125,13 @@ msgstr ""
 
 #: lib/ex_admin/themes/active_admin/form.ex:110
 #: lib/ex_admin/themes/admin_lte2/form.ex:102
+#: lib/ex_admin/themes/admin_vending/form.ex:102
 msgid "Cancel"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/form.ex:103
 #: lib/ex_admin/themes/admin_lte2/form.ex:99
+#: lib/ex_admin/themes/admin_vending/form.ex:99
 msgid "Create"
 msgstr ""
 
@@ -126,29 +141,35 @@ msgstr ""
 
 #: web/templates/themes/active_admin/layout/header.html.eex:11
 #: web/templates/themes/admin_lte2/layout/header.html.eex:25
+#: web/templates/themes/admin_vending/layout/header.html.eex:25
 msgid "Logout"
 msgstr ""
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:22
+#: web/templates/themes/admin_vending/layout/header.html.eex:22
 msgid "Profile"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/form.ex:195
 #: lib/ex_admin/themes/admin_lte2/form.ex:196
+#: lib/ex_admin/themes/admin_vending/form.ex:199
 msgid "Remove"
 msgstr ""
 
 #: lib/ex_admin/themes/admin_lte2/filter.ex:43
+#: lib/ex_admin/themes/admin_vending/filter.ex:43
 msgid "Search %{name_label}"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/form.ex:103
 #: lib/ex_admin/themes/admin_lte2/form.ex:99
+#: lib/ex_admin/themes/admin_vending/form.ex:99
 msgid "Update"
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/table.ex:21
 #: lib/ex_admin/themes/admin_lte2/table.ex:27
+#: lib/ex_admin/themes/admin_vending/table.ex:27
 msgid "%{resource_model} Details"
 msgstr ""
 
@@ -214,11 +235,13 @@ msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:29
 #: lib/ex_admin/themes/admin_lte2/index.ex:28
+#: lib/ex_admin/themes/admin_vending/index.ex:28
 msgid "No %{label} found."
 msgstr ""
 
 #: lib/ex_admin/themes/active_admin/index.ex:31
 #: lib/ex_admin/themes/admin_lte2/index.ex:30
+#: lib/ex_admin/themes/admin_vending/index.ex:30
 msgid "There are no %{label} yet. "
 msgstr ""
 
@@ -248,18 +271,22 @@ msgstr ""
 
 #: lib/ex_admin/index.ex:328
 #: web/templates/themes/admin_lte2/layout/header.html.eex:63
+#: web/templates/themes/admin_vending/layout/header.html.eex:62
 msgid "Actions"
 msgstr ""
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:48
 #: web/templates/themes/admin_lte2/layout/header.html.eex:52
+#: web/templates/themes/admin_vending/layout/header.html.eex:51
 msgid "Resources"
 msgstr ""
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:72
+#: web/templates/themes/admin_vending/layout/header.html.eex:71
 msgid "Scopes"
 msgstr ""
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:33
+#: web/templates/themes/admin_vending/layout/header.html.eex:33
 msgid "Themes"
 msgstr ""

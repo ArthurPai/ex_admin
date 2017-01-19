@@ -18,21 +18,26 @@ msgstr[1] "已成功删除"
 
 #: lib/ex_admin/themes/active_admin/index.ex:145
 #: lib/ex_admin/themes/admin_lte2/index.ex:139
+#: lib/ex_admin/themes/admin_vending/index.ex:145
 msgid "Batch Actions"
 msgstr "批次处理"
 
 #: lib/ex_admin/themes/active_admin/index.ex:33
 #: lib/ex_admin/themes/admin_lte2/index.ex:32
+#: lib/ex_admin/themes/admin_vending/index.ex:32
 msgid "Create one"
 msgstr "新增"
 
 #: lib/ex_admin/themes/active_admin/index.ex:116
-#: lib/ex_admin/themes/admin_lte2/index.ex:110 lib/ex_admin/view_helpers.ex:63
+#: lib/ex_admin/themes/admin_lte2/index.ex:110
+#: lib/ex_admin/themes/admin_vending/index.ex:112
+#: lib/ex_admin/view_helpers.ex:63
 msgid "Edit"
 msgstr "编辑"
 
 #: lib/ex_admin/themes/active_admin/filter.ex:14
 #: lib/ex_admin/themes/admin_lte2/filter.ex:15
+#: lib/ex_admin/themes/admin_vending/filter.ex:15
 msgid "Filters"
 msgstr "过滤"
 
@@ -66,10 +71,12 @@ msgstr "更新成功"
 
 #: lib/ex_admin/themes/active_admin/index.ex:131
 #: lib/ex_admin/themes/admin_lte2/index.ex:125
+#: lib/ex_admin/themes/admin_vending/index.ex:131
 msgid "Are you sure you want to delete these %{name}? You wont be able to undo this."
 msgstr "确定删除？ 此动作无法还原！"
 
 #: lib/ex_admin/themes/admin_lte2/filter.ex:27
+#: lib/ex_admin/themes/admin_vending/filter.ex:27
 msgid "Clear Filters"
 msgstr "清除"
 
@@ -79,21 +86,27 @@ msgstr "清除"
 #: lib/ex_admin/themes/admin_lte2/form.ex:246
 #: lib/ex_admin/themes/admin_lte2/form.ex:297
 #: lib/ex_admin/themes/admin_lte2/index.ex:113
+#: lib/ex_admin/themes/admin_vending/form.ex:249
+#: lib/ex_admin/themes/admin_vending/form.ex:300
+#: lib/ex_admin/themes/admin_vending/index.ex:117
 msgid "Delete"
 msgstr "删除"
 
 #: lib/ex_admin/themes/active_admin/filter.ex:23
 #: lib/ex_admin/themes/admin_lte2/filter.ex:26
+#: lib/ex_admin/themes/admin_vending/filter.ex:26
 msgid "Filter"
 msgstr "过滤"
 
 #: lib/ex_admin/themes/active_admin/index.ex:113
 #: lib/ex_admin/themes/admin_lte2/index.ex:107
+#: lib/ex_admin/themes/admin_vending/index.ex:107
 msgid "View"
 msgstr "详细"
 
 #: lib/ex_admin/themes/active_admin/index.ex:152
 #: lib/ex_admin/themes/admin_lte2/index.ex:146
+#: lib/ex_admin/themes/admin_vending/index.ex:152
 msgid "Delete Selected"
 msgstr "删除选择的项目"
 
@@ -111,11 +124,13 @@ msgstr "确定删除？"
 
 #: lib/ex_admin/themes/active_admin/form.ex:110
 #: lib/ex_admin/themes/admin_lte2/form.ex:102
+#: lib/ex_admin/themes/admin_vending/form.ex:102
 msgid "Cancel"
 msgstr "取消"
 
 #: lib/ex_admin/themes/active_admin/form.ex:103
 #: lib/ex_admin/themes/admin_lte2/form.ex:99
+#: lib/ex_admin/themes/admin_vending/form.ex:99
 msgid "Create"
 msgstr "新增"
 
@@ -125,29 +140,35 @@ msgstr "下载："
 
 #: web/templates/themes/active_admin/layout/header.html.eex:11
 #: web/templates/themes/admin_lte2/layout/header.html.eex:25
+#: web/templates/themes/admin_vending/layout/header.html.eex:25
 msgid "Logout"
 msgstr "登出"
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:22
+#: web/templates/themes/admin_vending/layout/header.html.eex:22
 msgid "Profile"
 msgstr "个人信息"
 
 #: lib/ex_admin/themes/active_admin/form.ex:195
 #: lib/ex_admin/themes/admin_lte2/form.ex:196
+#: lib/ex_admin/themes/admin_vending/form.ex:199
 msgid "Remove"
 msgstr "移除"
 
 #: lib/ex_admin/themes/admin_lte2/filter.ex:43
+#: lib/ex_admin/themes/admin_vending/filter.ex:43
 msgid "Search %{name_label}"
 msgstr "搜寻 %{name_label}"
 
 #: lib/ex_admin/themes/active_admin/form.ex:103
 #: lib/ex_admin/themes/admin_lte2/form.ex:99
+#: lib/ex_admin/themes/admin_vending/form.ex:99
 msgid "Update"
 msgstr "更新"
 
 #: lib/ex_admin/themes/active_admin/table.ex:21
 #: lib/ex_admin/themes/admin_lte2/table.ex:27
+#: lib/ex_admin/themes/admin_vending/table.ex:27
 msgid "%{resource_model} Details"
 msgstr "%{resource_model} 详细资讯"
 
@@ -213,11 +234,13 @@ msgstr "选择 %{nm}"
 
 #: lib/ex_admin/themes/active_admin/index.ex:29
 #: lib/ex_admin/themes/admin_lte2/index.ex:28
+#: lib/ex_admin/themes/admin_vending/index.ex:28
 msgid "No %{label} found."
 msgstr "%{label} 找不到"
 
 #: lib/ex_admin/themes/active_admin/index.ex:31
 #: lib/ex_admin/themes/admin_lte2/index.ex:30
+#: lib/ex_admin/themes/admin_vending/index.ex:30
 msgid "There are no %{label} yet. "
 msgstr "无此 %{label}"
 
@@ -247,18 +270,22 @@ msgstr "开头为"
 
 #: lib/ex_admin/index.ex:328
 #: web/templates/themes/admin_lte2/layout/header.html.eex:63
+#: web/templates/themes/admin_vending/layout/header.html.eex:62
 msgid "Actions"
 msgstr "动作"
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:48
 #: web/templates/themes/admin_lte2/layout/header.html.eex:52
+#: web/templates/themes/admin_vending/layout/header.html.eex:51
 msgid "Resources"
 msgstr "资源"
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:72
+#: web/templates/themes/admin_vending/layout/header.html.eex:71
 msgid "Scopes"
 msgstr "分类"
 
 #: web/templates/themes/admin_lte2/layout/header.html.eex:33
+#: web/templates/themes/admin_vending/layout/header.html.eex:33
 msgid "Themes"
 msgstr "主题"

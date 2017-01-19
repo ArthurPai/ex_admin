@@ -1,0 +1,101 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: zh-CN\n"
+
+#: lib/ex_admin/form.ex:1382
+msgid "can't be blank"
+msgstr "不能为空"
+
+#: lib/ex_admin/form.ex:1377
+msgid "has already been taken"
+msgstr "已被使用"
+
+msgid "is invalid"
+msgstr "是无效的"
+
+msgid "has invalid format"
+msgstr "无效的格式"
+
+msgid "has an invalid entry"
+msgstr "有一个无效的条目"
+
+msgid "is reserved"
+msgstr "已被保留"
+
+msgid "does not match confirmation"
+msgstr "不匹配"
+
+msgid "is still associated to this entry"
+msgstr "仍然与此条目相关联"
+
+msgid "are still associated to this entry"
+msgstr "仍然与此条目相关联"
+
+msgid "should be %{count} character(s)"
+msgid_plural "should be %{count} character(s)"
+msgstr[0] "应为%{count}个字符"
+msgstr[1] "应为%{count}个字符"
+
+msgid "should have %{count} item(s)"
+msgid_plural "should have %{count} item(s)"
+msgstr[0] "应该有%{count}个项目"
+msgstr[1] "应该有%{count}个项目"
+
+msgid "should be at least %{count} character(s)"
+msgid_plural "should be at least %{count} character(s)"
+msgstr[0] "应该至少有%{count}个字符"
+msgstr[1] "应该至少有%{count}个字符"
+
+msgid "should have at least %{count} item(s)"
+msgid_plural "should have at least %{count} item(s)"
+msgstr[0] "应该至少有%{count}个项目"
+msgstr[1] "应该至少有%{count}个项目"
+
+msgid "should be at most %{count} character(s)"
+msgid_plural "should be at most %{count} character(s)"
+msgstr[0] "应该最多为%{count}个字符"
+msgstr[1] "应该最多为%{count}个字符"
+
+msgid "should have at most %{count} item(s)"
+msgid_plural "should have at most %{count} item(s)"
+msgstr[0] "应该最多有%{count}个项目"
+msgstr[1] "应该最多有%{count}个项目"
+
+msgid "must be less than %{number}"
+msgstr "必须小于%{number}"
+
+msgid "must be greater than %{number}"
+msgstr "必须大于%{number}"
+
+msgid "must be less than or equal to %{number}"
+msgstr "必须小于或等于%{number}"
+
+msgid "must be greater than or equal to %{number}"
+msgstr "必须大于或等于%{number}"
+
+msgid "must be equal to %{number}"
+msgstr "必须等于%{number}"
+
+#: lib/ex_admin/form.ex:1381
+msgid "has incorrect format"
+msgstr "无效的格式"
+
+#: lib/ex_admin/form.ex:1378
+msgid "has to be valid"
+msgstr "必须有效"
+
+#: lib/ex_admin/form.ex:1379
+msgid "must be longer than %{min}"
+msgstr "必须大于%{min}"
+
+#: lib/ex_admin/form.ex:1380
+msgid "must match %{humanize_field}"
+msgstr "必须匹配%{humanize_field}"

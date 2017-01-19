@@ -200,6 +200,7 @@ defmodule ExAdmin.Form do
   import ExAdmin.Utils
   import ExAdmin.Helpers
   import ExAdmin.DslUtils
+  import ExAdmin.Gettext
   import ExAdmin.Form.Fields
   import ExAdmin.ViewHelpers, only: [escape_javascript: 1]
   require IEx
@@ -1373,18 +1374,21 @@ defmodule ExAdmin.Form do
   end
 
   @doc false
-  def error_messages(:unique), do: "has already been taken"
-  def error_messages(:invalid), do: "has to be valid"
-  def error_messages({:too_short, min}), do: "must be longer than #{min - 1}"
-  def error_messages({:must_match, field}), do: "must match #{humanize field}"
-  def error_messages(:format), do: "has incorrect format"
-  def error_messages("empty"), do: "can't be blank"
-  def error_messages({msg, opts}) when is_binary(msg) do
+  def error_messages(:unique), do: dgettext("errors", "has already been taken")
+  def error_messages(:invalid), do: dgettext("errors", "has to be valid")
+  def error_messages({:too_short, min}), do: dgettext("errors", "must be longer than %{min}", min: min-1)
+  def error_messages({:must_match, field}), do: dgettext("errors", "must match %{humanize_field}", humanize_field: (humanize field))
+  def error_messages(:format), do: dgettext("errors", "has incorrect format")
+  def error_messages("empty"), do: dgettext("errors", "can't be blank")
+  def error_messages({msg, %{count: _} = opts}) when is_binary(msg) do
     count = if is_integer(opts[:count]), do: opts[:count], else: 0
     String.replace(msg, "%{count}", Integer.to_string(count))
   end
-  def error_messages(other) when is_binary(other), do: other
-  def error_messages(other), do: "error: #{inspect other}"
+  def error_messages({msg, _opts}) when is_binary(msg) do
+    Gettext.dgettext(ExAdmin.Gettext, "errors", msg);
+  end
+  def error_messages(other) when is_binary(other), do: Gettext.dgettext(ExAdmin.Gettext, "errors", other);
+  def error_messages(other), do: Gettext.dgettext(ExAdmin.Gettext, "errors", "error: %{other}", other: (inspect other))
 
   def global_script, do: """
     $(function() {
