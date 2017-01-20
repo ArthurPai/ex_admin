@@ -24,6 +24,7 @@ defmodule ExAdmin.AdminVending.LayoutView do
   def any_actions?([]), do: false
   def any_actions?(nil), do: false
   def any_actions?([{_, nil} | _]), do: false
+  def any_actions?([{_, []} | _]), do: false
   def any_actions?(_), do: true
 
   def build_menu_icon(_, opts) when opts in [nil, []], do: opts
