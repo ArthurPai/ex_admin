@@ -116,7 +116,7 @@ defmodule ExAdmin.Theme.AdminVending.Form do
     end
   end
 
-  def build_inputs_collection(model_name, name, name_ids, required, fun) do
+  def build_inputs_collection(model_name, name, name_ids, _required, fun) do
     div(".form-group") do
       label ".col-sm-2.control-label", for: "#{model_name}_#{name_ids}" do
         text humanize(name)
@@ -201,7 +201,7 @@ defmodule ExAdmin.Theme.AdminVending.Form do
 
         for field <- fields do
           f_name = field[:name]
-          required = if f_name in required_list, do: true, else: false
+          # required = if f_name in required_list, do: true, else: false
           name = "#{base_name}[#{f_name}]"
           errors = get_errors(errors, "#{model_name}[#{field_field_name}][#{orig_inx}][#{f_name}]")
           error = if errors in [nil, [], false], do: "", else: ".has-error"

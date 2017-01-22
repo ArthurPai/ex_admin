@@ -3,7 +3,7 @@ defmodule ExAdmin.Theme.AdminVending do
   use Xain
   import ExAdmin.Utils
   # import ExAdmin.ViewHelpers
-  import ExAdmin.Form, only: [required_abbr: 1]
+  # import ExAdmin.Form, only: [required_abbr: 1]
 
   @name "admin_vending"
 
@@ -32,7 +32,7 @@ defmodule ExAdmin.Theme.AdminVending do
     end
   end
 
-  def wrap_item_type(_type, label, ext_name, contents, error, required) do
+  def wrap_item_type(_type, label, ext_name, contents, error, _required) do
     error = get_form_error_class(error)
     markup do
       label(".col-sm-2.control-label", for: ext_name) do
