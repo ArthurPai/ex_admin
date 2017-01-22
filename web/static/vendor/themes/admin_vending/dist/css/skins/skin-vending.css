@@ -85,6 +85,9 @@ body.skin-vending {
 .skin-vending .content-header {
   background: transparent;
 }
+.skin-vending .content-header>.breadcrumb {
+  background: transparent;
+}
 .skin-vending .wrapper,
 .skin-vending .main-sidebar,
 .skin-vending .left-side {
