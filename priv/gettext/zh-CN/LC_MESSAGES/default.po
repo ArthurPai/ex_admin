@@ -242,7 +242,7 @@ msgstr "%{label} 找不到"
 #: lib/ex_admin/themes/admin_lte2/index.ex:30
 #: lib/ex_admin/themes/admin_vending/index.ex:30
 msgid "There are no %{label} yet. "
-msgstr "无此 %{label}"
+msgstr "无%{label}"
 
 #: lib/ex_admin/utils.ex:112
 msgid "a"

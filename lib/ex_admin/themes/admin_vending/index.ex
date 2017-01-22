@@ -23,13 +23,16 @@ defmodule ExAdmin.Theme.AdminVending.Index do
 
   def blank_slate_page(conn, %{defn: defn, label: label}) do
     div ".blank_slate_container" do
-      span ".blank_slate" do
-        unless is_nil(conn.params["q"]) and is_nil(conn.params["scope"]) do
+      unless is_nil(conn.params["q"]) and is_nil(conn.params["scope"]) do
+        span ".blank_slate" do
           text (gettext"No %{label} found.", label: (humanize label))
-        else
-          text (gettext"There are no %{label} yet. ", label: (humanize label))
+        end
+      else
+        span ".blank_slate" do
           if ExAdmin.has_action?(conn, defn, :new) do
-            a (gettext "Create one"), href: admin_resource_path(conn, :new)
+            a (gettext("Create") <> label), href: admin_resource_path(conn, :new)
+          else
+            text (gettext"There are no %{label} yet. ", label: label)
           end
         end
       end

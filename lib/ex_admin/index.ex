@@ -278,7 +278,7 @@ defmodule ExAdmin.Index do
     # IEx.pry
     name = resource_model(conn) |> titleize |> Inflex.pluralize
     defn = conn.assigns.defn
-    label = get_resource_label(conn) |> Inflex.pluralize
+    label = displayable_name_plural(conn)
     batch_actions = (not false in defn.batch_actions) and :delete in page_opts[:actions]
     opts = %{
       columns: Map.get(page_opts, :columns, 3),
