@@ -17,7 +17,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <%= current_user_name(@conn) %> <span class="caret"></span>
           </a>
-          <ul class="dropdown-menu" role="menu">
+          <ul class="dropdown-menu dropdown-menu-right" role="menu">
             <li>
               <%= Phoenix.HTML.Link.link (gettext "Profile"), to: ExAdmin.Utils.admin_resource_path(current_user(@conn)) %>
             </li>
